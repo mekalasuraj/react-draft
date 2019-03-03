@@ -1,0 +1,14 @@
+node_modules
+npm-debug.log
+report.xml
+*.log
+npm-debug.*
+logs
+coverage
+.DS_Store
+.idea
+.git
+uploads
+.idea/
+build
+package-lock.json

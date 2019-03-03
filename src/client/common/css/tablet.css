@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+
+    .promo .intro .title {
+      font-size: 38px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .wrapper {
+        min-height: inherit;
+        margin-bottom: 0;
+        position: relative;
+    }
+    .wrapper:after {
+        content: none;
+    }
+
+    .navbar-fixed-top {
+        position: static;
+    }
+    .header h1.logo {
+        float: none !important;
+        text-align: center;
+    }
+    .main-nav {
+        float: none !important;
+    }
+    .main-nav .navbar-collapse {
+        float: none;
+        text-align: center;
+    }
+    .main-nav .navbar-collapse .nav {
+        margin: 0 auto;
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

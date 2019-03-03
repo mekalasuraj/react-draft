@@ -1,0 +1,9 @@
+{
+    "host": "ptempsloc.com",
+    "dbConnectionString":"postgres://chartertempsapp:password@127.0.0.1:5432/googlekeep",
+    "supportEmail": "admin@chartertemps.org",
+    "domainUrl": "http://chartertempsloc.org",
+    "aws": {
+        "s3Bucket": "ctemps-dev"
+    }
+}

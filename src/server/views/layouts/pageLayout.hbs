@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Charter Temps - {{title}}</title>
+    {{> styles}} {{{block "pageStyles"}}}
+</head>
+
+<body>
+    <div class="wrapper">
+        {{#if isAuthenticated}}
+             {{> teacher/loggedInNavBar}}
+        {{!-- {{else}}
+            {{> loggedOutNavBar}} --}}
+        {{/if}}
+        {{{body}}}
+    </div>
+    {{> scripts}} {{{block "pageScripts"}}}
+</body>
+</html>

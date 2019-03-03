@@ -1,0 +1,49 @@
+@media (max-width: 767px) {
+    .wrapper {
+        min-height: inherit;
+        margin-bottom: 0;
+        position: relative;
+    }
+    .wrapper:after {
+        content: none;
+    }
+
+    .modal.modal-login .modal-dialog, .modal.modal-resetpass .modal-dialog {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .navbar-fixed-top {
+        position: static;
+    }
+    .promo .intro .title {
+        font-size: 22px;
+    }
+    .promo .intro #summary {
+        font-size: 15px;
+        margin-top: 3%;
+        text-align: center;
+    }
+    .signup .signup-form .form-group {
+        width: 180px;
+    }
+    .signup .signup-form .form-control {
+        font-size: 13px;
+    }
+    .features {
+        padding: 30px 0;
+    }
+    .features .item {
+        padding: 15px 0;
+        margin-bottom: 0;
+    }
+    .features .item .content {
+        padding: 30px;
+    }
+    .header .main-nav .nav .dropdown-menu:before {
+        display: none;
+    }
+    .header .main-nav .nav .dropdown-menu {
+        border: none;
+    }
+}

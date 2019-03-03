@@ -1,0 +1,47 @@
+@media (min-width: 992px) {
+    .promo .intro .title {
+        font-size: 38px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .navbar-fixed-top {
+        position: fixed;
+        top: 0;
+    }
+    .main-nav {
+        float: right !important;
+    }
+    .header h1.logo {
+        float: left !important;
+        text-align: left;
+    }
+    .main-nav {
+        float: right !important;
+    }
+    .main-nav .navbar-collapse {
+        float: left;
+        text-align: left;
+    }
+    .main-nav .navbar-collapse .nav {
+        margin: inherit;
+        float: left;
+    }
+    /* Sticky Footer */
+    html, body {
+        height: 100%;
+    }
+    .wrapper {
+        min-height: 100%;
+        margin-bottom: -296px;
+        position: relative;
+        /* equal to footer height */
+    }
+    .wrapper:after {
+        content: "";
+        display: block;
+        /*height: 296px;*/
+        /* must be the same height as footer */
+    }
+}

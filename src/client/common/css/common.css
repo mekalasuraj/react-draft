@@ -1,0 +1,247 @@
+/* =================================== Base styles =================================== */
+body {
+    font-family: 'Lato', arial, sans-serif;
+    /*font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;*/
+    color: #444;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+}
+.wrapper:after {
+    content: "";
+    display: block;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+.profile-img-circle {
+    border-radius: 50%;
+    width: 65%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+p {
+    color: #444;
+    font-size: 14px;
+}
+a {
+    color: #6dbd63;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+    color: #6dbd63;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+.btn,
+a.btn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    /*padding: 8px 16px;*/
+}
+.btn .fa,
+a.btn .fa {
+    color: #fff;
+    margin-right: 10px;
+    /*font-size: 15px;*/
+}
+a.btn-cta-primary,
+.btn-cta-primary {
+    background: #6dbd63;
+    border: 2px solid #6dbd63;
+    color: #fff;
+    text-transform: uppercase;
+}
+a.btn-cta-primary:hover,
+.btn-cta-primary:hover {
+    background: #51a746;
+    border: 2px solid #51a746;
+    color: #fff;
+}
+a.btn-cta-secondary,
+.btn-cta-secondary {
+    background: #fff;
+    border: 2px solid #6dbd63;
+    color: #6dbd63;
+}
+a.btn-cta-secondary .fa,
+.btn-cta-secondary .fa {
+    margin-left: 5px;
+    color: #6dbd63;
+}
+a.btn-cta-secondary:hover,
+.btn-cta-secondary:hover {
+    background: #fff;
+    border: 2px solid #51a746;
+    color: #51a746;
+}
+a.btn-cta-secondary:hover .fa,
+.btn-cta-secondary:hover .fa {
+    color: #51a746;
+}
+.form-control {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    height: 39px;
+    border-color: #d9d9d9;
+}
+.form-control:focus {
+    border-color: #6dbd63;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+blockquote {
+    font-size: 14px;
+}
+.text-highlight {
+    color: #04273e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+input[type="button"],
+textarea {
+    appearance: none;
+    /* for mobile safari */
+    -webkit-appearance: none;
+}
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #ccc;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #ccc;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #ccc;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #ccc;
+}
+
+/*====================================================== Custom styles ==================================================*/
+
+.field-validation-error {
+    color: #a94442;
+    margin-top:15px;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.row {
+    margin-right: 0px;
+}
+
+.pageContent {
+    min-height: 95%;
+    position: relative;
+    padding-bottom: 10%;
+    line-height: 2;
+    margin-top: 5%;
+}
+
+.radio {
+    margin-left: 20px;
+}
+
+.intro {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.guide {
+    color: #666;
+}
+
+.diabledContent {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.note {
+    color: #999;
+}
+
+div.disabled {
+    background-color: #ccc;
+}
+
+.alert {
+    line-height: 1.5;
+}
+
+.title-error{
+    font-size: 70px;
+    margin-left: 100px;
+}
+
+.title-invalidRequest{
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+.social-login,
+.social-signup {
+    margin-bottom: 15px;
+}
+
+.modal.modal-login .facebook-btn,
+.modal.modal-getStarted .facebook-btn {
+  background: #3b5998;
+}
+
+.modal.modal-login .facebook-btn:hover,
+.modal.modal-getStarted .facebook-btn:hover {
+  background: #2d4373;
+}
+
+.modal.modal-login .social-login .btn:hover,
+.modal.modal-getStarted .social-signup .btn:hover {
+  color: #fff;
+}
+.modal.modal-login .social-login .btn,
+.modal.modal-getStarted .social-signup .btn {
+  color: #fff;
+}
+
+.btn-regular-signup {
+    width: 38%;
+    margin-bottom: 20px;
+}
+
+.top-buffer { margin-top:20px; }

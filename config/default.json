@@ -1,0 +1,16 @@
+{
+  "port": 8081,
+  "accountVerificationKey": "chartertemps.org accountverification",
+  "emailSubject": {
+      "newMemberRegistration": "Charter Temps - Notification of New Member Registration",
+      "passwordReset": "Charter Temps - Password Reset Instructions",
+      "contactUs": "Charter Temps - Contact Us Message",
+      "newSubstituteRequest": "Charter Temps - New Sustitute Request",
+      "teacherWelcomeEmail": "Charter Temps - Welcome Instructions"
+  },
+  "aws": {
+      "accessKeyId": "AKIAIJXQTVBZZNLBFZWQ",
+      "secretAccessKey": "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",
+      "signatureVersion": "v4"
+  }
+}
