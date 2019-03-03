@@ -1,10 +1,5 @@
 {
     "host": "chartertemps.org",
-    "dbConnectionString": "postgres://chartertempsapp:@wesome@chartertemps-prod.cgdemrki9zks.us-east-1.rds.amazonaws.com:5432/chartertemps",
-    "supportEmail": "admin@chartertemps.org",
-    "ctempsSupportEmail": "info@chartertemps.org",
-    "domainUrl": "http://chartertemps.org",
-    "aws": {
-        "s3Bucket": "ctemps-prod"
-    }
+    "dbConnectionString": "postgres://chartertempsapp:@wesome@chartertemps-prod.cgdemrki9zks.us-east-1.rds.amazonaws.com:5432/chartertemps"
+    
 }

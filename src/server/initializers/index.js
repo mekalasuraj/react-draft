@@ -14,7 +14,6 @@ import apiRoutes from './apiRoutes';
 
 export default (app, express, config) => {
 
-
     function reqSerializer(req) {
         return {
             method: req.method,
@@ -54,12 +53,6 @@ export default (app, express, config) => {
     const dbPromise = require('pg-promise')({ promiseLib: bPromise })(config.dbConnectionString);
 
     // initialize AWS
-    aws.config.update({
-        accessKeyId: config.aws.accessKeyId,
-        secretAccessKey: config.aws.secretAccessKey,
-        signatureVersion: config.aws.signatureVersion
-    });
-    aws.config.update({region:'us-east-1'});
 
     /******************************************  UTILITIES  ******************************************/
 
@@ -102,6 +95,21 @@ export default (app, express, config) => {
     app.use((req, res, next) => {
         res.locals.user = req.user;
         res.locals.isAuthenticated = req.isAuthenticated();
+
+        if(req.isAuthenticated()) {
+            switch (req.user.type) {
+                case 'teacher':
+                res.locals.isTeacher = true;
+                break;
+                case 'school':
+                res.locals.isSchool = true;
+                break;
+                case 'admin':
+                res.locals.isAdmin = true;
+                break;
+            }
+        }
+
         next();
     });
 
@@ -115,4 +123,13 @@ export default (app, express, config) => {
     });
     app.use(router);
 
+    app.use(function(err, req, res, next) {
+        res.status(500);
+        console.error(err); // eslint-disable-line no-console
+        res.render('error/500-page', { title: '500: Internal Server Error', layout: 'pageLayout' });
+    });
+
+    app.use(function(req, res) {
+        res.render('error/404-page', { title: '404: File Not Found', layout: 'pageLayout' });
+    });
 };
